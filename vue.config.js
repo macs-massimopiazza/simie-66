@@ -1,5 +1,5 @@
 const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
   transpileDependencies: true,
-  publicPath: "/foca-spadaccina-54/"
+  publicPath: "/simie-66/"
 })

@@ -1,18 +1,16 @@
 <template>
   <div id="app">
-    <h1 style="color: aqua;">🥰Viva Classe 54🥰</h1>
-    <h3>🐳Che la foca sia sempre con voi🐳</h3>
-    <p style="color: blue;">💕I vostri insegnanti e coordinatori: Luca, Gianluca, Alessio e Massimo 💕</p>
-    <img src="https://rivistanatura.com/wp-content/uploads/2017/05/narvalo-770x381.jpg" alt="la foca spadaccina">
-    <img src="https://www.osservatorioartico.it/wp-content/uploads/2019/01/narvalo-1280x720.jpg" alt="la foca spadaccina">
-    <img src="https://www.ilgiornaledeimarinai.it/wp-content/uploads/2013/12/Il-Narvalo.jpg" alt="la foca spadaccina">
-    <h3 style="color: greenyellow;">🪐 Qualche parola 🪐</h3>
+    <h1 style="color: greem;">🥰Viva Classe 66🥰</h1>
+    <h3>🐵🐒A cui a quanto pare piacciono le scimmie🐵🐒</h3>
+    <span style="color: blue; background: white;">💕I vostri insegnanti e coordinatori: Luca, Alessandro, Paolo e Massimo 💕</span>
+    <br>
+    <iframe style="border-radius:12px;" src="https://open.spotify.com/embed/track/6gxycjJNMgmAyfzUXBN80P?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <br>
+    <h1 style="color: greenyellow;">✨ Le vostre scimmie ✨</h1>
     <ul>
-      <li v-for="(frase, index) in frasi" :key="index">{{ frase.testo}}  <span style="font-style: italic;">  -{{ frase.nome}}</span></li> <span style="font-style: italic;"></span>
+      <li v-for="(scimmia, index) in scimmie" :key="index"><img :src="scimmia.url" :alt="scimmia.alt"> <span>{{ scimmia.alt }}</span></li>
     </ul>
 
-    <h3 style="color: blue;">🎼 Colonna sonora offerta da noi sappiamo chi 🎼</h3>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/c-UNbjm0Wyo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 </template>
 
@@ -22,17 +20,17 @@ export default {
   name: 'App',
   data() {
     return {
-      frasi: [
-        { testo: "Grazie ragazzi per non aver usato linux durante il corso ✨", nome: "Massimo" },
-        { testo: "Manuel, hai pestato i piedi alla persona sbagliata", nome: "Anonimo" },
-        { testo: "Apparte i tutor tutto bene", nome: "Michelangelo" },
-        { testo: "Mac ha più problemi", nome: "Gisueppe" },
-        { testo: "grazie a boolean ho imparato a fare le ricerche su google", nome: "Micaela" },
-        { testo: "Aiutooo ho iniziato a programmare qualke gg fa ke mio cuggino mi a insegnato col il blokko note ma come si mettono i stili x favore haiuto", nome: "Marco" },
-        { testo: "vogliamo un ad block per boolean", nome: "Angelo" },
-        { testo: "Ho avuto un contrattempo, sono entrato per salutare, non posso connettermi… un saluto Massimo e Alessio", nome: "Andrea" },
-        { testo: "✨SCUSA GIANLUCAH, POSSO FARTI UNA DOMANDAA_A_A?✨", nome: "Noi sappiamo chi" },
-        { testo: "✨ vi vogliamo bene, dai che è venerdì, stasera si sboccia, progetto finale senza di noi è come mangiare la minestra con la forchetta. 130 martin garrix ✨", nome: "Giusteppe Michelangelo Marco Alberto" },
+      scimmie: [
+        { alt: "la scimmia triste di manuel", url: "https://pbs.twimg.com/media/FEhF3U1WQAAcXBT?format=jpg&name=large"},
+        { alt: "la scimmia di edoard borr", url: "https://centerforgreatapes.org/wp-content/uploads/2021/03/IMG_00251_Louie.jpg"},
+        { alt: "la scimmia di lucio", url: "https://i2.wp.com/www.linkiesta.it/wp-content/uploads/2020/02/dd998222-599c-4aa4-a8b4-49f0feaf1268_large.jpg?fit=1200,874&ssl=1"},
+        { alt: "la seconda scimmia di lucio", url: "https://media.npr.org/assets/img/2017/09/12/macaca_nigra_self-portrait-3e0070aa19a7fe36e802253048411a38f14a79f8-s1100-c50.jpg"},
+        { alt: "la scimmia di edomndo", url: "https://media-assets.wired.it/photos/615c496336911c2d72f97331/master/pass/1415182318_2001_a_space_odyssey_scimmia.jpg"},
+        { alt: "la scimmia di davide che è uguale a quella di lucio", url: "https://media.npr.org/assets/img/2017/09/12/macaca_nigra_self-portrait-3e0070aa19a7fe36e802253048411a38f14a79f8-s1100-c50.jpg"},
+        { alt: "la scimmia di andrei", url: "https://www.marcotogni.it/v-2/34/jigokudani.jpg"},
+        { alt: "la scimmia di vincenzo", url: "https://1.bp.blogspot.com/-uKONCFlu-NE/UP63qo4kXqI/AAAAAAAAONA/QS46Dbk91kQ/s1600/immagini+divertenti+di+scimmie+2.jpg"},
+        { alt: "la scimmia cattiva di lorenzo", url: "https://nerdmovieproductions.it/wp-content/uploads/2021/02/godzilla-770x488.jpg"},
+        { alt: "la scimmia di lisa", url: "https://media-assets.wired.it/photos/615f078b4c30266a0d6379dd/master/w_960,c_limit/1481626523_scimmie-em.jpg"},
       ]
     }
   }
@@ -46,7 +44,7 @@ export default {
 }
 
 body {
-  background-color: #ff00a6;
+  background-color:rgb(255, 72, 0);
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -57,13 +55,25 @@ body {
  
 }
 
-img {
-  width: 600px;
-}
-
 li {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+  list-style-type: none;
   font-size: 20px;
   margin-bottom: 5px
+}
+
+li span {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #fff;
+  color: black;
+} 
+
+img {
+  width: 600px;
 }
 
 h1, h3, img, p, ul {
