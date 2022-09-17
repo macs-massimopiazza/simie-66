@@ -12,7 +12,7 @@ git add .
 
 git commit -m "New Deploy"
 
-git push -f https://github.com/macs-massimopiazza/foca-spadaccina-54.git master:gh-pages
+git push -f https://github.com/macs-massimopiazza/simie-66.git master:gh-pages
 
 cd ..
 

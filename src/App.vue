@@ -1,11 +1,9 @@
 <template>
   <div id="app">
-    <h1 style="color: greem;">🥰Viva Classe 66🥰</h1>
+    <h1 style="color: green;">🥰Viva Classe 66🥰</h1>
     <h3>🐵🐒A cui a quanto pare piacciono le scimmie🐵🐒</h3>
     <span style="color: blue; background: white;">💕I vostri insegnanti e coordinatori: Luca, Alessandro, Paolo e Massimo 💕</span>
-    <br>
-    <iframe style="border-radius:12px;" src="https://open.spotify.com/embed/track/6gxycjJNMgmAyfzUXBN80P?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-    <br>
+    <iframe style="border-radius:12px;" src="https://open.spotify.com/embed/track/6gxycjJNMgmAyfzUXBN80P?utm_source=generator" width="90%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     <h1 style="color: greenyellow;">✨ Le vostre scimmie ✨</h1>
     <ul>
       <li v-for="(scimmia, index) in scimmie" :key="index"><img :src="scimmia.url" :alt="scimmia.alt"> <span>{{ scimmia.alt }}</span></li>
